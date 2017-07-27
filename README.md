@@ -1,35 +1,14 @@
-# Tokens
+# ApolloDAE Tokens
 [ ![Codeship Status for ConsenSys/Tokens](https://app.codeship.com/projects/ccf33380-4dfa-0135-cfa1-72c4965f7f14/status?branch=master)](https://app.codeship.com/projects/233433)
 
-This repo contains Solidity smart contract code to issue simple, standards-compliant tokens on Ethereum. It can be used to create any form of asset, currency, coin, hours, usage tokens, vunk, etc.  
+This repo contains Solidity smart contract code to issue Apollo's Exchange tokens. There are two tokens being issue in our token sale coming up. 
 
-The default is StandardToken.sol which ONLY implements the core ERC20 standard functionality [#20](https://github.com/ethereum/EIPs/issues/20).  
+### APO, APEX or APE - The main Apollo token
+Our first, and main token will be our official Apollo Exchange token, most likely called the APO, APEX or APE token. The Apollo token will be transferable and tradable, include voting rights and be used to pay exchange fee's (currently on Apollo only). Buying these tokens in our ICO will allow you to trade on our exchange for at least 50% less than user's who don't have Apollo tokens. With our ICO setup, these tokens will be sold at an average agreed apon price by the token buyers in the ICO. To read more on how this will be accomplished, visit apollodae.io
 
-HumanStandardToken.sol is an example of a token that has optional extras fit for your issuing your own tokens, to be mainly used by other humans. It includes:  
+### AVO token - Voting rights only - no value
+Our second token will be a non-transferable, and non-tradable token (exceptions made and possibly unlocked in the future). This token, most likely called the AVO token, will only be issued to ICO buyers of our Apollo main token. Inital buyers get these tokens in order to vote on how their funds are being spent in our company. All AVO holders will get to allow or not allow transaction to be created and ETH be spent. We also see this as 100% protecting company funds in a massive multi-sig implimentation. Any major ETH movements have to be voted on by AVO holders, and approved by contract Owner Keys (Apollo management). We will also be added multiple functions that will be locked unless AVO holders approve to unlock them. (ex: a function will allow AVO holders to tranfer their funds, but will be locked. In the future, this function may be allowed with an AVO vote, and owners approval. This particular function is not allowed at the beginning to keep all AVO voters decentralized and not allow any hackers or malicious actors the chance to buy up or collect all AVO tokens, making AVO multi-sig uselss.)
 
-1. Initial Finite Supply (upon creation one specifies how much is minted).  
-2. In the absence of a token registry: Optional Decimal, Symbol & Name.  
-3. Optional approveAndCall() functionality to notify a contract if an approval() has occurred.  
-
-There is a set of tests written for the HumanStandardToken.sol using the Truffle framework to do so.
-
-Standards allows other contract developers to easily incorporate your token into their application (governance, exchanges, games, etc). It will be updated as often as possible.  
-
-## Testing
-
-```npm install```
-
-For getting truffle-hdwallet-provider. Solidity tests have to still be written.
-
-Uses Truffle 3.x.
-
-## ethpm
-
-This is published under tokens at ethpm.
-
-### Pull requests are welcome! Please keep standards discussions to the EIP repos.
-
-> "You get a token, you get a token, everyone gets a token!" - Token the 3rd: the fun gerbil.  
 
 ### Licensed under MIT.  
 
